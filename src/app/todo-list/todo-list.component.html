@@ -1,0 +1,42 @@
+<div class="jumbotron-sm text-center">
+    <h3>{{title}}</h3>
+    <p>What to do it!</p>
+</div>
+<div class="container">
+    <div class="btn-top">
+        <a routerLink="/update">aaaa</a>
+        <div class="input-group">
+            <input type="text" [(ngModel)]="todo.title" class="form-control" placeholder="What to do...">
+            <span class="input-group-btn">
+            <button type="button" class="btn btn-primary" (click)="addTodo()">등록</button>
+          </span>
+        </div>
+    </div>
+    <div class="notice notice-success">
+        <span class="content-detail"><strong>Doing</strong> 입무중 <span class="label label-default">New</span></span>
+        <span class="close">×</span>
+    </div>
+    <div class="notice notice-danger">
+        <span class="content-detail"><strong>미처리</strong> notice-danger </span> <span class="close">×</span>
+    </div>
+    <div class="notice notice-info">
+        <span class="content-detail"><strong>Notice</strong> notice-info </span>
+        <span class="close">×</span>
+    </div>
+    <div class="notice notice-warning">
+        <span class="content-detail"><strong>임박</strong> notice-warning </span>
+        <span class="close">×</span>
+    </div>
+    <div class="notice checked">
+        <span class="content-detail"><strong>완료</strong> Done do </span>
+        <span class="close">×</span>
+    </div>
+    <div class="notice notice-lg">
+        <span class="content-detail"><strong>Done</strong> notice-lg</span>
+        <span class="close">×</span>
+    </div>
+    <div class="notice notice-sm">
+        <span class="content-detail"><strong>Done</strong> notice-sm </span>
+        <span class="close">×</span>
+    </div>
+</div>

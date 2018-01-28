@@ -1,0 +1,125 @@
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    height: 100%;
+    overflow-y: scroll;
+    /* margin: 0 auto; */
+    /* font: 100%/1.4 serif; */
+    /* border: 1px solid rgba(0,0,0,0.25) */
+}
+
+.btn-top {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.notice {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    padding: 15px 15px 30px 30px;
+    /* background-color: #fafafa; */
+    background: whitesmoke;
+    border-left: 12px solid #7f7f84;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0 5px 8px -6px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 5px 8px -6px rgba(0, 0, 0, .2);
+    box-shadow: 0 5px 8px -6px rgba(0, 0, 0, .2);
+}
+
+.notice-sm {
+    padding: 10px;
+    font-size: 80%;
+}
+
+.notice-lg {
+    padding: 35px;
+    font-size: large;
+}
+
+.notice-success {
+    border-color: #80D651;
+}
+
+.notice-success>strong {
+    color: #80D651;
+}
+
+.notice-info {
+    border-color: #45ABCD;
+}
+
+.notice-info>strong {
+    color: #45ABCD;
+}
+
+.notice-warning {
+    border-color: #FEAF20;
+}
+
+.notice-warning>strong {
+    color: #FEAF20;
+}
+
+.notice-danger {
+    border-color: #d73814;
+}
+
+.notice-danger>strong {
+    color: #d73814;
+}
+
+.notice.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+.notice.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+span.content-detail {
+    height: 100%;
+    top: 0;
+    position: absolute;
+    width: calc(100% - 77px);
+    padding: 12px 0px 12px 0px;
+}
+
+.notice-lg span.content-detail {
+    padding: 22px 0px 12px 0px;
+}
+
+.notice-sm span.content-detail {
+    padding: 3px 0px 12px 0px;
+}
+
+.close:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 12px 16px 12px 16px;
+}
+
+.notice-sm span.close {
+    padding: 0px 16px 12px 16px !important;
+}
